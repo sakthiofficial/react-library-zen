@@ -1,38 +1,167 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+.home-page{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-page__img img{
+  height: 32rem;
+  opacity:0.5;
+}
+.home-page__cont{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns{
+ 
+}
+.home-page__cont button{
+  margin: 1.5rem;
+}
+.app-navbar button{
+  margin-right: 2rem;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.library-page{
+ width: 100%;
+ /* height: 100vh; */
+ margin-top: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.library-page-management{
+  /* background-color:black; */
+
+  width: 70rem;
+  height: 30rem;
+}
+.library-btns button{
+  border:white ;
+  border-right:1px solid ;
+}
+.book-info{
+  position: absolute;
+  display: flex;
+  background-color:#ffffff;
+  align-items: center;
+  width: 100%;
+}
+.book-info__img img{
+ width: 700px;
+height: 500px;
+}
+.book-info__cont{
+  padding: 3px 6rem;
+}
+.book-info__cont h1 {
+font-weight: 640;
+font-size: 2rem;
+
+}
+.book-info__cont button{
+  margin-right: 1rem;
+}
+.book-info__cont p{
+  font-size: 1.3rem;
+  display: flex;
+  font-weight: 350;
+  align-items: center;
+  line-height: 3rem;
+}
+.book-info__cont svg{
+padding: 0px 12px;
+color: #afafafa1;
+}
+.sub-topic{
+  font-weight: 480;
+  margin-right: 1rem;
+}
+.form-area__img img{
+  width: 700px;
+  height: 500px;
+}
+.form-area{
+  display:flex;
+  background-color: white;
+  align-items: center;
+}
+.form-area__form{
   text-align: center;
+  margin-left: 7rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-area__form form{
   display: flex;
   flex-direction: column;
+}
+.form-area__form form > div{
+margin-bottom: 3rem;
+}
+.form-area__form form input{
+  width: 15rem;
+  height: 1rem;
+}
+.form-area__form form button{
+  width: 6rem;
+  height: 1.8rem;
+}
+.form-area__form h1 {
+  font-weight: 600;
+}
+.barrow-cont{
+  background-color: #000000b0;
+  position: relative;
+  top:0;
+  height: 100vh;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.barrowed-field{
+  width: 30rem;
+  height: 15rem;
+  background-color:#e0e0e0db;
+border-radius: 2rem;
+
+
+}
+.barrowed-mem {
+  width: 50rem;
+ height: fit-content;
+  border-radius: 0rem;
+overflow: hidden;
+overflow-y: scroll;
+}
+.barrowed-field form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+.barrowed-field form button{
+margin-top: 4rem;
+}
+.barrowed-field form > div{
+  width: 20rem;
 }
 
-.App-link {
-  color: #61dafb;
+.css-9wcvca-MuiTableCell-root-MuiTablePagination-root:last-child{
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.barrow-msg{
+  width: 100%;
+  text-align: center;
 }
